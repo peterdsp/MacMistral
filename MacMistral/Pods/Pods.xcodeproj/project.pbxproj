@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		079C57B9DE25C63B3255AF60FBD2DC5E /* NSEventModifierFlags+HotKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00020A4D867470FA8BF73F1C7B146E45 /* NSEventModifierFlags+HotKey.swift */; };
+		15089A4C92033B6051DBFE8D9E816B0F /* Pods-MacMistral-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 682872FE04DD3136688BD2DDD2615BF2 /* Pods-MacMistral-dummy.m */; };
+		41C588D399DF7C5CF7ED6B495E69F692 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF537C4B2333ED4B67B788F34AA128F /* AppKit.framework */; };
+		4AA825B25C3A0A8BA9E03678D2D2F907 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC06087B2939703A4EFECAD790F44320 /* Cocoa.framework */; };
+		4D75EB22F0E01020261266136F28F231 /* HotKey-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F4EBF27B3F1C0A12866DE7B9BD679C /* HotKey-dummy.m */; };
+		793125C058F7C3E22A30A39AF80CF5E5 /* HotKeysController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7409626E023FEA1927C211ECF84BFEEF /* HotKeysController.swift */; };
+		7DE7A644BDB044F2508790BECD629DE0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC06087B2939703A4EFECAD790F44320 /* Cocoa.framework */; };
+		8DB1B75BF35671F8DCBCFFEE7BB0C1AE /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E81F6492756EB97096F56436A1CE1548 /* Carbon.framework */; };
+		94B90F9F93C7FAC45F6A1B414F7DA08F /* Pods-MacMistral-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C32D2E6B1DAFC48F3BB978ADA695D359 /* Pods-MacMistral-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8D30D6ED8EBE901B6B125B571CBE21D /* HotKey-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A9C583B406702E360A438458A787666 /* HotKey-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD2F2F6790B1097BD9932DAD76532E43 /* HotKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B2009184434729ACCB10CA7FEC24C5 /* HotKey.swift */; };
+		D9D58C6A3D46C786319DF6026A2FD2A5 /* KeyCombo+System.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC275F10B67C17FABA27DF358DB68FBA /* KeyCombo+System.swift */; };
+		DC3C51DF7E16D0AED233A93CA0220290 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7B0257281CD519BF60826062FFD8F /* Key.swift */; };
+		E693C42A8D760AB0F139D18B50DEEFC4 /* KeyCombo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CDE2EED2267A43E61FFA4E3307222 /* KeyCombo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FF53581AC8F7F41188D5C4C7D55B80B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB4D977E4336D9F2E9E510A33CD1DB6D;
+			remoteInfo = HotKey;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00020A4D867470FA8BF73F1C7B146E45 /* NSEventModifierFlags+HotKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSEventModifierFlags+HotKey.swift"; path = "Sources/HotKey/NSEventModifierFlags+HotKey.swift"; sourceTree = "<group>"; };
+		0AD1AB9443E784AFC227886ACBE3CE9D /* HotKey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HotKey.debug.xcconfig; sourceTree = "<group>"; };
+		1FF537C4B2333ED4B67B788F34AA128F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		2B73A5CEAC71FA68CBD0B9B5CFB80DCC /* HotKey-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HotKey-prefix.pch"; sourceTree = "<group>"; };
+		3C16DF4C81AF988B37C8786812B7E90E /* Pods-MacMistral-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MacMistral-frameworks.sh"; sourceTree = "<group>"; };
+		3DB4856690049697A707FBB768750402 /* Pods-MacMistral.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MacMistral.debug.xcconfig"; sourceTree = "<group>"; };
+		42605A837452224F0BDB963EF9D37399 /* Pods-MacMistral-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MacMistral-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5225216EDA3AA9E76F1DFF9E1DD91320 /* HotKey-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HotKey-Info.plist"; sourceTree = "<group>"; };
+		682872FE04DD3136688BD2DDD2615BF2 /* Pods-MacMistral-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MacMistral-dummy.m"; sourceTree = "<group>"; };
+		6E6D43082B098106A79AA53102C90EE6 /* HotKey.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HotKey.modulemap; sourceTree = "<group>"; };
+		7409626E023FEA1927C211ECF84BFEEF /* HotKeysController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HotKeysController.swift; path = Sources/HotKey/HotKeysController.swift; sourceTree = "<group>"; };
+		76E18621483212B92087F2866ADB81B2 /* Pods-MacMistral-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MacMistral-Info.plist"; sourceTree = "<group>"; };
+		7A9C583B406702E360A438458A787666 /* HotKey-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HotKey-umbrella.h"; sourceTree = "<group>"; };
+		81F4EBF27B3F1C0A12866DE7B9BD679C /* HotKey-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HotKey-dummy.m"; sourceTree = "<group>"; };
+		899A11502C963BEC287962281A814210 /* Pods-MacMistral-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MacMistral-acknowledgements.plist"; sourceTree = "<group>"; };
+		8B2A475C41BDBF04DA1836D5F7397F12 /* Pods-MacMistral.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MacMistral.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3B2009184434729ACCB10CA7FEC24C5 /* HotKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HotKey.swift; path = Sources/HotKey/HotKey.swift; sourceTree = "<group>"; };
+		BAD7B0257281CD519BF60826062FFD8F /* Key.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Key.swift; path = Sources/HotKey/Key.swift; sourceTree = "<group>"; };
+		BE0CDE2EED2267A43E61FFA4E3307222 /* KeyCombo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyCombo.swift; path = Sources/HotKey/KeyCombo.swift; sourceTree = "<group>"; };
+		BF2E724146CCFC10613B0148B39BC09F /* Pods-MacMistral.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MacMistral.release.xcconfig"; sourceTree = "<group>"; };
+		C32D2E6B1DAFC48F3BB978ADA695D359 /* Pods-MacMistral-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MacMistral-umbrella.h"; sourceTree = "<group>"; };
+		C4CD02C1C74AAD74787FE2BF781FBA31 /* Pods-MacMistral */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MacMistral"; path = Pods_MacMistral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC275F10B67C17FABA27DF358DB68FBA /* KeyCombo+System.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "KeyCombo+System.swift"; path = "Sources/HotKey/KeyCombo+System.swift"; sourceTree = "<group>"; };
+		D93DD5320B9CE6EC20456ACB55AC18C5 /* HotKey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HotKey.release.xcconfig; sourceTree = "<group>"; };
+		E81F6492756EB97096F56436A1CE1548 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework; sourceTree = DEVELOPER_DIR; };
+		EC06087B2939703A4EFECAD790F44320 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		F36B2E7BB4C3E92E4DF7443FAFF3AE3F /* HotKey */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HotKey; path = HotKey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A99CD7FAC982C438E253E6A363E346A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA825B25C3A0A8BA9E03678D2D2F907 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA0F76C6399C7F5C6832C06252640783 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C588D399DF7C5CF7ED6B495E69F692 /* AppKit.framework in Frameworks */,
+				8DB1B75BF35671F8DCBCFFEE7BB0C1AE /* Carbon.framework in Frameworks */,
+				7DE7A644BDB044F2508790BECD629DE0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		223A6E82614509C4616324325ADACE98 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				1FF537C4B2333ED4B67B788F34AA128F /* AppKit.framework */,
+				E81F6492756EB97096F56436A1CE1548 /* Carbon.framework */,
+				EC06087B2939703A4EFECAD790F44320 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		28CE260B48EC139CEB7FA25D708805F3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D19ED7E276B6134425B365FE3536D1DA /* Pods-MacMistral */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		35FEC39C3C835F0F746CCB812D089FFA /* HotKey */ = {
+			isa = PBXGroup;
+			children = (
+				A3B2009184434729ACCB10CA7FEC24C5 /* HotKey.swift */,
+				7409626E023FEA1927C211ECF84BFEEF /* HotKeysController.swift */,
+				BAD7B0257281CD519BF60826062FFD8F /* Key.swift */,
+				BE0CDE2EED2267A43E61FFA4E3307222 /* KeyCombo.swift */,
+				CC275F10B67C17FABA27DF358DB68FBA /* KeyCombo+System.swift */,
+				00020A4D867470FA8BF73F1C7B146E45 /* NSEventModifierFlags+HotKey.swift */,
+				644FB92CC1861D4C486A7589109413FA /* Support Files */,
+			);
+			name = HotKey;
+			path = HotKey;
+			sourceTree = "<group>";
+		};
+		644FB92CC1861D4C486A7589109413FA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E6D43082B098106A79AA53102C90EE6 /* HotKey.modulemap */,
+				81F4EBF27B3F1C0A12866DE7B9BD679C /* HotKey-dummy.m */,
+				5225216EDA3AA9E76F1DFF9E1DD91320 /* HotKey-Info.plist */,
+				2B73A5CEAC71FA68CBD0B9B5CFB80DCC /* HotKey-prefix.pch */,
+				7A9C583B406702E360A438458A787666 /* HotKey-umbrella.h */,
+				0AD1AB9443E784AFC227886ACBE3CE9D /* HotKey.debug.xcconfig */,
+				D93DD5320B9CE6EC20456ACB55AC18C5 /* HotKey.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HotKey";
+			sourceTree = "<group>";
+		};
+		A3CDB250FFEFB42CA2C68F1FBD92997D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				223A6E82614509C4616324325ADACE98 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB322C4C9D85C8AC192661ED636E3AD2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35FEC39C3C835F0F746CCB812D089FFA /* HotKey */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				A3CDB250FFEFB42CA2C68F1FBD92997D /* Frameworks */,
+				AB322C4C9D85C8AC192661ED636E3AD2 /* Pods */,
+				E583B695FE370D4C6CC021D438684FD7 /* Products */,
+				28CE260B48EC139CEB7FA25D708805F3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D19ED7E276B6134425B365FE3536D1DA /* Pods-MacMistral */ = {
+			isa = PBXGroup;
+			children = (
+				8B2A475C41BDBF04DA1836D5F7397F12 /* Pods-MacMistral.modulemap */,
+				42605A837452224F0BDB963EF9D37399 /* Pods-MacMistral-acknowledgements.markdown */,
+				899A11502C963BEC287962281A814210 /* Pods-MacMistral-acknowledgements.plist */,
+				682872FE04DD3136688BD2DDD2615BF2 /* Pods-MacMistral-dummy.m */,
+				3C16DF4C81AF988B37C8786812B7E90E /* Pods-MacMistral-frameworks.sh */,
+				76E18621483212B92087F2866ADB81B2 /* Pods-MacMistral-Info.plist */,
+				C32D2E6B1DAFC48F3BB978ADA695D359 /* Pods-MacMistral-umbrella.h */,
+				3DB4856690049697A707FBB768750402 /* Pods-MacMistral.debug.xcconfig */,
+				BF2E724146CCFC10613B0148B39BC09F /* Pods-MacMistral.release.xcconfig */,
+			);
+			name = "Pods-MacMistral";
+			path = "Target Support Files/Pods-MacMistral";
+			sourceTree = "<group>";
+		};
+		E583B695FE370D4C6CC021D438684FD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F36B2E7BB4C3E92E4DF7443FAFF3AE3F /* HotKey */,
+				C4CD02C1C74AAD74787FE2BF781FBA31 /* Pods-MacMistral */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5229122CEC73947391FBBD18B3CCE97D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8D30D6ED8EBE901B6B125B571CBE21D /* HotKey-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6490215BEB3A0FE66F90683FE87DEE0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94B90F9F93C7FAC45F6A1B414F7DA08F /* Pods-MacMistral-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B50622FE1C7484C2228620A4DA8ABC7D /* Pods-MacMistral */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E654EA45298278E49DF8DBDBA7084D30 /* Build configuration list for PBXNativeTarget "Pods-MacMistral" */;
+			buildPhases = (
+				E6490215BEB3A0FE66F90683FE87DEE0 /* Headers */,
+				B711AC18D385E94AD34C1EB5B27EDDFC /* Sources */,
+				4A99CD7FAC982C438E253E6A363E346A /* Frameworks */,
+				46A43B0EE26B0214E8EECB8BDDF9CE27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42BF1C54DBFE0FC882E3EA865DF9A93C /* PBXTargetDependency */,
+			);
+			name = "Pods-MacMistral";
+			productName = Pods_MacMistral;
+			productReference = C4CD02C1C74AAD74787FE2BF781FBA31 /* Pods-MacMistral */;
+			productType = "com.apple.product-type.framework";
+		};
+		DB4D977E4336D9F2E9E510A33CD1DB6D /* HotKey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB5AEC2BAAF899282A89A5C6C2838CD2 /* Build configuration list for PBXNativeTarget "HotKey" */;
+			buildPhases = (
+				5229122CEC73947391FBBD18B3CCE97D /* Headers */,
+				437F0EC752DA0BDC79B61DD39E5D9643 /* Sources */,
+				CA0F76C6399C7F5C6832C06252640783 /* Frameworks */,
+				EBC25B92AE2B8AD483032CBDC99747C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HotKey;
+			productName = HotKey;
+			productReference = F36B2E7BB4C3E92E4DF7443FAFF3AE3F /* HotKey */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E583B695FE370D4C6CC021D438684FD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB4D977E4336D9F2E9E510A33CD1DB6D /* HotKey */,
+				B50622FE1C7484C2228620A4DA8ABC7D /* Pods-MacMistral */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46A43B0EE26B0214E8EECB8BDDF9CE27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC25B92AE2B8AD483032CBDC99747C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		437F0EC752DA0BDC79B61DD39E5D9643 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD2F2F6790B1097BD9932DAD76532E43 /* HotKey.swift in Sources */,
+				4D75EB22F0E01020261266136F28F231 /* HotKey-dummy.m in Sources */,
+				793125C058F7C3E22A30A39AF80CF5E5 /* HotKeysController.swift in Sources */,
+				DC3C51DF7E16D0AED233A93CA0220290 /* Key.swift in Sources */,
+				E693C42A8D760AB0F139D18B50DEEFC4 /* KeyCombo.swift in Sources */,
+				D9D58C6A3D46C786319DF6026A2FD2A5 /* KeyCombo+System.swift in Sources */,
+				079C57B9DE25C63B3255AF60FBD2DC5E /* NSEventModifierFlags+HotKey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B711AC18D385E94AD34C1EB5B27EDDFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15089A4C92033B6051DBFE8D9E816B0F /* Pods-MacMistral-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42BF1C54DBFE0FC882E3EA865DF9A93C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HotKey;
+			target = DB4D977E4336D9F2E9E510A33CD1DB6D /* HotKey */;
+			targetProxy = 2FF53581AC8F7F41188D5C4C7D55B80B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C3968C412B9375673F252B50474D0BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF2E724146CCFC10613B0148B39BC09F /* Pods-MacMistral.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MacMistral/Pods-MacMistral-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MODULEMAP_FILE = "Target Support Files/Pods-MacMistral/Pods-MacMistral.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		36029D1CDF9B784B7F6DF5306F794F14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D93DD5320B9CE6EC20456ACB55AC18C5 /* HotKey.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HotKey/HotKey-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HotKey/HotKey-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/HotKey/HotKey.modulemap";
+				PRODUCT_MODULE_NAME = HotKey;
+				PRODUCT_NAME = HotKey;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		530F3D53587FC90D598205305CDB28D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DB4856690049697A707FBB768750402 /* Pods-MacMistral.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MacMistral/Pods-MacMistral-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MODULEMAP_FILE = "Target Support Files/Pods-MacMistral/Pods-MacMistral.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		618AD1D411738AB0AACE19A2D556DADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6D488C548677A81A4EF6E0C980065F92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		94822143CA6BEBAA4849C3265FE7536F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AD1AB9443E784AFC227886ACBE3CE9D /* HotKey.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HotKey/HotKey-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HotKey/HotKey-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/HotKey/HotKey.modulemap";
+				PRODUCT_MODULE_NAME = HotKey;
+				PRODUCT_NAME = HotKey;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D488C548677A81A4EF6E0C980065F92 /* Debug */,
+				618AD1D411738AB0AACE19A2D556DADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB5AEC2BAAF899282A89A5C6C2838CD2 /* Build configuration list for PBXNativeTarget "HotKey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94822143CA6BEBAA4849C3265FE7536F /* Debug */,
+				36029D1CDF9B784B7F6DF5306F794F14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E654EA45298278E49DF8DBDBA7084D30 /* Build configuration list for PBXNativeTarget "Pods-MacMistral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				530F3D53587FC90D598205305CDB28D5 /* Debug */,
+				0C3968C412B9375673F252B50474D0BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

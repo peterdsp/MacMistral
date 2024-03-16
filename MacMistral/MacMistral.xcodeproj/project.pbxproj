@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C0BA4D52BA6055E0050C66B /* MacMistralApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0BA4D42BA6055E0050C66B /* MacMistralApp.swift */; };
+		2C0BA4D52BA6055E0050C66B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0BA4D42BA6055E0050C66B /* main.swift */; };
 		2C0BA4D72BA6055E0050C66B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0BA4D62BA6055E0050C66B /* ContentView.swift */; };
-		2C0BA4D92BA6055E0050C66B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0BA4D82BA6055E0050C66B /* Item.swift */; };
 		2C0BA4DB2BA6055F0050C66B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C0BA4DA2BA6055F0050C66B /* Assets.xcassets */; };
 		2C0BA4DE2BA6055F0050C66B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C0BA4DD2BA6055F0050C66B /* Preview Assets.xcassets */; };
+		2C0BA4E82BA6083C0050C66B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C0BA4E72BA6083C0050C66B /* Info.plist */; };
+		2C0BA4EC2BA60E980050C66B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0BA4EB2BA60E980050C66B /* AppDelegate.swift */; };
+		2C0BA4EE2BA60F690050C66B /* MacMistralPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0BA4ED2BA60F690050C66B /* MacMistralPopup.swift */; };
+		D659761E14B9D2B39B36A60D /* Pods_MacMistral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F2D8E172B49EF6BAD51AE0 /* Pods_MacMistral.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C0BA4D12BA6055E0050C66B /* MacMistral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacMistral.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C0BA4D42BA6055E0050C66B /* MacMistralApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacMistralApp.swift; sourceTree = "<group>"; };
+		2C0BA4D42BA6055E0050C66B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2C0BA4D62BA6055E0050C66B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2C0BA4D82BA6055E0050C66B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		2C0BA4DA2BA6055F0050C66B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C0BA4DD2BA6055F0050C66B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2C0BA4DF2BA6055F0050C66B /* MacMistral.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacMistral.entitlements; sourceTree = "<group>"; };
+		2C0BA4E72BA6083C0050C66B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C0BA4EB2BA60E980050C66B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C0BA4ED2BA60F690050C66B /* MacMistralPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacMistralPopup.swift; sourceTree = "<group>"; };
+		89D6FAB5DEB41BDBBA5C52BF /* Pods-MacMistral.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacMistral.debug.xcconfig"; path = "Target Support Files/Pods-MacMistral/Pods-MacMistral.debug.xcconfig"; sourceTree = "<group>"; };
+		8F0ADF4E3968B97C11770276 /* Pods-MacMistral.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacMistral.release.xcconfig"; path = "Target Support Files/Pods-MacMistral/Pods-MacMistral.release.xcconfig"; sourceTree = "<group>"; };
+		98F2D8E172B49EF6BAD51AE0 /* Pods_MacMistral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MacMistral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D659761E14B9D2B39B36A60D /* Pods_MacMistral.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				2C0BA4D32BA6055E0050C66B /* MacMistral */,
 				2C0BA4D22BA6055E0050C66B /* Products */,
+				DDA7E8DA6859F56DFB8AB389 /* Pods */,
+				82D98578AB5CBF0C2C6EFD29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +65,14 @@
 		2C0BA4D32BA6055E0050C66B /* MacMistral */ = {
 			isa = PBXGroup;
 			children = (
-				2C0BA4D42BA6055E0050C66B /* MacMistralApp.swift */,
+				2C0BA4D42BA6055E0050C66B /* main.swift */,
+				2C0BA4EB2BA60E980050C66B /* AppDelegate.swift */,
+				2C0BA4ED2BA60F690050C66B /* MacMistralPopup.swift */,
 				2C0BA4D62BA6055E0050C66B /* ContentView.swift */,
-				2C0BA4D82BA6055E0050C66B /* Item.swift */,
 				2C0BA4DA2BA6055F0050C66B /* Assets.xcassets */,
 				2C0BA4DF2BA6055F0050C66B /* MacMistral.entitlements */,
 				2C0BA4DC2BA6055F0050C66B /* Preview Content */,
+				2C0BA4E72BA6083C0050C66B /* Info.plist */,
 			);
 			path = MacMistral;
 			sourceTree = "<group>";
@@ -72,6 +85,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		82D98578AB5CBF0C2C6EFD29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98F2D8E172B49EF6BAD51AE0 /* Pods_MacMistral.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDA7E8DA6859F56DFB8AB389 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89D6FAB5DEB41BDBBA5C52BF /* Pods-MacMistral.debug.xcconfig */,
+				8F0ADF4E3968B97C11770276 /* Pods-MacMistral.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C0BA4E22BA6055F0050C66B /* Build configuration list for PBXNativeTarget "MacMistral" */;
 			buildPhases = (
+				F65421029483697384E324F6 /* [CP] Check Pods Manifest.lock */,
 				2C0BA4CD2BA6055E0050C66B /* Sources */,
 				2C0BA4CE2BA6055E0050C66B /* Frameworks */,
 				2C0BA4CF2BA6055E0050C66B /* Resources */,
+				DF94DC5276814DB8F7DC990D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,19 +164,63 @@
 			files = (
 				2C0BA4DE2BA6055F0050C66B /* Preview Assets.xcassets in Resources */,
 				2C0BA4DB2BA6055F0050C66B /* Assets.xcassets in Resources */,
+				2C0BA4E82BA6083C0050C66B /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DF94DC5276814DB8F7DC990D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MacMistral/Pods-MacMistral-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MacMistral/Pods-MacMistral-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MacMistral/Pods-MacMistral-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F65421029483697384E324F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MacMistral-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2C0BA4CD2BA6055E0050C66B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C0BA4EC2BA60E980050C66B /* AppDelegate.swift in Sources */,
+				2C0BA4EE2BA60F690050C66B /* MacMistralPopup.swift in Sources */,
 				2C0BA4D72BA6055E0050C66B /* ContentView.swift in Sources */,
-				2C0BA4D92BA6055E0050C66B /* Item.swift in Sources */,
-				2C0BA4D52BA6055E0050C66B /* MacMistralApp.swift in Sources */,
+				2C0BA4D52BA6055E0050C66B /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +264,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -251,7 +327,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -271,6 +347,7 @@
 		};
 		2C0BA4E32BA6055F0050C66B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89D6FAB5DEB41BDBBA5C52BF /* Pods-MacMistral.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -288,7 +365,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MacMistral.app.MacMistral;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +376,7 @@
 		};
 		2C0BA4E42BA6055F0050C66B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F0ADF4E3968B97C11770276 /* Pods-MacMistral.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,7 +394,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MacMistral.app.MacMistral;
 				PRODUCT_NAME = "$(TARGET_NAME)";
